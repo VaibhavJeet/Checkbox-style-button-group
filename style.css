@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    position: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: #222; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    /* background-color: aqua; */
+
+}
+.content label{
+    cursor: pointer;
+}
+.content label input[type="checkbox"]{
+    display: none;
+}
+
+.content label span{
+    position: relative;
+    display: inline-block;
+    background: #377DFF;
+    padding: 10px 20px;
+    color: aliceblue;
+    font-size: 14px;
+    user-select: none;
+    overflow: hidden;
+    
+}
+.top{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.bottom{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+.content label input[type="checkbox"]:checked ~ span{
+    background-color: #2968df;
+}
